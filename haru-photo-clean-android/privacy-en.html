@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haru Photo Clean — Android Privacy Policy</title>
+<style>body{margin:0;background:#f7f8f5;color:#18231c;font:1.05rem/1.75 system-ui,sans-serif}main{max-width:52rem;margin:auto;padding:1.5rem}p{overflow-wrap:anywhere}a{display:inline-flex;align-items:center;min-height:48px;margin-right:1rem}a:focus-visible{outline:3px solid #456b4e}</style>
+</head>
+<body><main>
+<nav aria-label="Language"><a href="privacy.html">한국어</a><a href="privacy-en.html">English</a></nav>
+<h1>Haru Photo Clean — Android Privacy Policy</h1>
+<p>Effective date: October 5, 2026 · Android app com.haru.photoclean</p>
+<p>This Android app is intended for users aged 13 and over.</p>
+<p>Haru Photo Clean Privacy Policy<br>Operator: Dongchan Seo<br>Support and privacy contact: eternalamour@naver.com</p>
+<h2>1. Photo access and purpose</h2>
+<p>Haru Photo Clean uses photos you select or authorize through Android to help you review them, choose keep/protect/deletion candidates and organize references into collections inside the app. You may use Photo Picker selections or choose device-photo access. Depending on Android, permission may cover all or selected photos.</p>
+<p>The app reads photo URI references and authorized public metadata, including names, sizes, dimensions, dates, MIME type and favorite status. Device-photo relative path, folder and filename hints help identify screenshot suggestions. Current app code does not request EXIF location or copy original photo files. The app does not establish whether a selected photo is on the device or in the cloud. It does not automatically import an entire Google Photos or iCloud library or directly connect to iCloud.</p>
+<p>If you deny or change access, the app checks the current authorized photo list. Unavailable photos may be removed from pending work while existing collection and review references remain. A retained reference does not restore access to the original.</p>
+<h2>2. Previews and image analysis</h2>
+<p>The app requests sized previews through Android content providers. The current requested size is 720×720; app code does not request an original-file download. A provider may nevertheless use a network or its own transfer method internally. Haru does not control a provider&#x27;s internal download size, transfer method, account handling or diagnostics. Review the policies and settings of the service supplying your selected photos as well.</p>
+<p>Previews are used in app memory. Prepared selected/provider previews are also stored in an app-private cache. Current limits are 20MiB for memory and a 64MiB trimming threshold for the disk preview cache. Cache entries can disappear through system storage management, app-data clearing, uninstall or access-list refresh. Only the next few device MediaStore photos are prefetched; new selected/provider preview preparation is user-started. Preparation may take time or fail, and supports cancel and retry.</p>
+<p>Similarity analysis starts only when you choose it and compares visual features of previews on the device. By default, it uses device previews and already-prepared selected-photo cache entries. Preparing new selected/provider previews during analysis requires a separate selection. Opening a side-by-side comparison alone does not start a new provider preview download. Similarity suggestions do not establish that photos are identical or should be deleted, and do not delete them automatically.</p>
+<h2>3. Cleanup records stored on your device</h2>
+<p>App-private storage retains photo URI and metadata references, collection names and membership, direction assignments, mode-specific review records, keep/protect/deletion choices, the current session and undo information, selected-photo references, trash/restore request state, batch goal and re-review settings. Collections do not change original photo locations or synchronize albums in other services.</p>
+<p>The app saves a cleanup decision before advancing to the next one. Saved progress can continue on a later launch after fresh authorized access is checked. If saved records cannot be read, the app preserves the existing file and pauses work. If you explicitly choose to preserve a recovery copy and start again, the copy is stored privately on the device first.</p>
+<p>An app-private log records action labels and timestamps; its existing content is cleared when its length exceeds 1MiB. This log does not replace the authoritative cleanup state file. App code has no route to upload these records to an app server or synchronize them through an app account.</p>
+<h2>4. Optional daily reminders</h2>
+<p>Daily photo-cleanup reminders are off by default. You can enable them and choose a time in the visible reminder settings screen. On Android 13 and later, required notification permission is requested there. A denied permission or observed system/channel block disables reminders and cancels scheduling. Photo review does not require enabling reminders.</p>
+<p>App-private preferences store the enabled choice, selected time, next scheduled timestamp and last-delivered local date. A generic reminder is generated on the device and contains no photo names or images. It follows the device&#x27;s local time and Android battery management may delay delivery. The app does not use exact-alarm permission or a background service. Turning reminders off cancels the app&#x27;s alarm and displayed notification. Reboot/timezone changes recheck existing choices and do not automatically enable the default OFF state.</p>
+<h2>5. Deletion candidates, system trash and restore</h2>
+<p>Choosing deletion candidates does not immediately change originals. You first review names, count and exclusions in the app, then approve Android&#x27;s system confirmation before the trash request runs. Requests are restricted to currently accessible, eligible device photos. Protected/favorite, selected/provider, unavailable and other ineligible items are excluded. The app does not request permanent deletion.</p>
+<p>Restore is a separate request requiring Android system confirmation. Retention expiry, external deletion or changed access can prevent restoration. Gallery/provider/backup synchronization may affect other devices or the cloud according to those systems and services; Haru does not control that behavior.</p>
+<h2>6. Ads, external transfer and other services</h2>
+<p>The app has no ads or ad-watching conditions and does not upload photos or organization records to a developer server or synchronize them through an app account. Android, photo providers and device manufacturers may process information under their own policies and settings.</p>
+<p>The current app has no app registration/account or photo-sharing transmission feature. It therefore has no app-account deletion or server-data deletion feature. For privacy inquiries, use the contact above.</p>
+<h2>7. Retention, clearing and backup boundaries</h2>
+<p>App-private records and settings stay on the device and can be removed by app-data clearing or uninstall. Revoking photo access alone does not erase every existing collection/review/recovery reference. Original photo deletion or restoration is handled through Android or the service providing the photos.</p>
+<p>The current configuration disables app backup and includes root-domain exclusions for cloud backup and device transfer. Device-transfer behavior can vary by operating system and manufacturer. This configuration does not turn off original-photo synchronization in gallery/provider/other backup services.</p>
+<h2>Inquiry information</h2>
+<p>If you contact the operator, your sender address and message are used to answer and resolve your inquiry. Inquiry information is retained while needed and removed when no longer needed, except where a legal retention obligation applies. You do not need to attach personal photos or cleanup records to an inquiry.</p>
+<h2>Android provider information</h2>
+<ul>
+<li><a href="https://developer.android.com/training/data-storage/shared/photo-picker">Android Photo Picker</a></li>
+<li><a href="https://developer.android.com/guide/topics/providers/cloud-media-provider">Android cloud media providers</a></li>
+</ul>
+</main></body>
+</html>
