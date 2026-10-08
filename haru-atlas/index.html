@@ -1,1 +1,113 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>World So Far · 앱 지원 / App Support</title><style>body{margin:0;background:#faf9f4;color:#213d39;font:16px/1.8 -apple-system,BlinkMacSystemFont,sans-serif}main{max-width:800px;margin:auto;padding:40px 24px 80px}h1{font-size:34px;line-height:1.2}h2{font-size:22px;margin-top:32px}a{color:#27675e}nav{display:flex;gap:22px}section+section{border-top:1px solid #dce5de;margin-top:50px;padding-top:28px}.meta{color:#627570}</style></head><body><main><nav><a href="privacy.html">개인정보처리방침 / Privacy</a><a href="#english">English</a></nav><section lang="ko"><h1>어디까지 - 나는 세상을 얼마나 가봤을까?</h1><p class="meta">World So Far · iPhone·iPad</p><p>다녀온 나라와 도시, 기억하고 싶은 여행과 다음 여행 일정을 나만의 지도에 남겨보세요.</p><h2>기록과 방문율</h2><p>‘국가 찾기’에서 나라를 선택하고 방문 상태, 날짜, 별점, 메모를 저장합니다. 방문율은 195개국을 기준으로 계산합니다. 도시 기록은 국가 기록과 별도이며, 도시 목록은 한국 출발 국제선 직항 목적지의 2026년 9월 자료를 사용합니다. 실시간 항공편 조회·예약 서비스는 아닙니다.</p><h2>위젯</h2><p>앱을 한 번 열고 기록을 저장한 뒤 iPhone·iPad 홈 화면의 위젯 추가에서 World So Far를 찾으세요. 세계 방문율과 가장 가까운 날짜가 있는 여행 예정 기록을 표시할 수 있습니다. 갱신 시점은 iOS가 관리합니다.</p><h2>언어와 데이터</h2><p>앱은 한국어와 영어를 지원합니다. 기기의 앱별 언어 설정에서 변경할 수 있습니다. 기록은 기기에 저장되므로 앱을 삭제하기 전에 운영체제 백업 설정을 확인하세요. Android와 iOS 간 기록 자동 이동 기능은 없습니다.</p><h2>도움이 필요할 때</h2><p><a href="https://github.com/DongchanSeo/DongchanSeo.github.io/issues">GitHub 지원 게시판</a>에 앱 버전, 기기·iOS 버전과 문제를 재현하는 순서를 적어 주세요. 공개 게시판이므로 개인정보나 여행 메모는 적지 마세요.</p></section><section id="english" lang="en"><h1>World So Far - Where I've Been</h1><p>App Support</p><p class="meta">iPhone and iPad</p><p>Keep your visited countries, city memories and upcoming trips together on a map of your own.</p><h2>Records and world progress</h2><p>Use Find countries to choose a destination, select a status, and save a date, rating or note. World progress is based on 195 countries. City records are independent from country records. The city catalog covers international nonstop destinations from South Korea using September 2026 data; it is not a live flight or booking service.</p><h2>Widgets</h2><p>Open the app and save your records, then find World So Far in the Home Screen widget gallery. Add world progress or your nearest dated planned trip. iOS controls widget refresh timing.</p><h2>Language and data</h2><p>The app supports English and Korean. Use your device's per-app language settings to switch. Records are stored locally; review your operating-system backup settings before deleting the app. Automatic transfer between Android and iOS is not available.</p><h2>Get help</h2><p>Use the <a href="https://github.com/DongchanSeo/DongchanSeo.github.io/issues">GitHub support board</a> and include the app version, device/iOS version, and steps to reproduce a problem. Issues are public: do not include personal contact details or private travel notes.</p></section></main></body></html>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Haru Travel support: published 1.9.6 (28) and version-specific guidance for the unpublished 1.9.7 (29) submission build.">
+  <title>Haru Travel · 앱 지원 / App Support</title>
+  <style>
+    :root{color-scheme:light;--ink:#213d39;--muted:#627570;--line:#dce5de;--paper:#faf9f4;--surface:#fff}
+    *{box-sizing:border-box}
+    html{scroll-padding-top:24px}
+    body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    main{max-width:860px;margin:auto;padding:36px 24px 64px}
+    h1{font-size:32px;line-height:1.25;margin:28px 0 12px}
+    h2{font-size:24px;line-height:1.4;margin:0 0 16px}
+    h3{font-size:19px;line-height:1.5;margin:28px 0 10px}
+    p{margin:12px 0}
+    a{color:#27675e;text-underline-offset:3px;overflow-wrap:anywhere}
+    a:focus-visible{outline:3px solid #27675e;outline-offset:4px}
+    nav{display:flex;flex-wrap:wrap;gap:4px 24px}
+    nav a{display:inline-flex;align-items:center;min-height:44px}
+    section{margin-top:36px;padding-top:28px;border-top:1px solid var(--line)}
+    .meta{color:var(--muted)}
+    .version-note{background:#eef2ec;border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-top:24px}
+    .version-note p:first-child{margin-top:0}
+    .version-note p:last-child{margin-bottom:0}
+    .release{display:inline-block;font-size:13px;font-weight:600;line-height:1.6;padding:4px 10px;border:1px solid var(--line);border-radius:6px;margin-bottom:14px;background:var(--surface)}
+    .submission{background:#f7eee0;border-color:#dacbb3;color:#725128}
+    .guide{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px;margin-top:28px}
+    .guide h2{font-size:22px}
+    ul{padding-left:22px;margin:12px 0}
+    li+li{margin-top:8px}
+    footer{margin-top:36px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+    @media(max-width:480px){main{padding:24px 20px 48px}h1{font-size:28px}h2{font-size:22px}.guide{padding:20px}.version-note{padding:16px}}
+  </style>
+</head>
+<body>
+<main>
+  <nav aria-label="지원 안내 / Support navigation">
+    <a href="#korean" lang="ko">한국어</a>
+    <a href="#english" lang="en">English</a>
+    <a href="privacy.html">개인정보 / Privacy</a>
+    <a href="#history">이전 안내 / History</a>
+  </nav>
+  <h1>Haru Travel · 지원 / Support</h1>
+  <p class="meta">iPhone · iPad · iOS / iPadOS 17 이상 · 17 or later</p>
+  <div class="version-note">
+    <p lang="ko"><strong>공개 버전: 1.9.6(28).</strong> 아래 1.9.7(29) 안내는 제출본에 대한 버전별 설명이며, 29는 아직 공개 출시되지 않았습니다.</p>
+    <p lang="en"><strong>Published version: 1.9.6 (28).</strong> The 1.9.7 (29) guide below describes the submission build. Build 29 is not publicly released.</p>
+  </div>
+
+  <section id="korean" lang="ko" aria-labelledby="korean-title">
+    <h2 id="korean-title">한국어 지원 안내</h2>
+    <span class="release">공개 1.9.6(28)</span>
+    <p>공개 버전은 국가 중심 지도와 검색으로 방문한 곳, 여행 예정, 가고 싶은 곳을 기록합니다. 날짜·평점·메모를 저장하고 195개국 기준 진행률을 확인할 수 있습니다. 도시별 보기 진입점은 제공하지 않으며 이전 기록은 보존합니다.</p>
+    <p>설정에서 한국어·English·Français·Español을 직접 선택할 수 있습니다. 이전 지원 페이지 원문은 <a href="support-before-build29.html">보관 사본</a>으로 남겨 두었습니다. 해당 원문은 과거 설명을 보존한 자료이며 현재 기능 안내와 구분해 주세요.</p>
+
+    <div class="guide" id="build29-ko">
+      <span class="release submission">제출본 1.9.7(29) · 공개 출시 전</span>
+      <h2>1.9.7(29) 버전별 안내</h2>
+      <h3>국가 지도·검색·여행 기록</h3>
+      <p>세계 지도나 국가 검색에서 목적지를 선택합니다. 검색에는 208개 국가·지역이 포함되며, 방문 진행률은 195개국을 기준으로 계산합니다. ‘다녀온 곳’, ‘여행 예정’, ‘가고 싶은 곳’을 구분하고 선택적으로 날짜·평점·메모를 저장하세요. Travel journal에서 저장한 국가 기록을 확인할 수 있습니다.</p>
+      <h3>이전 도시 기록과 위젯 링크</h3>
+      <p>국가 중심 화면이며 도시 전환·도시 검색·도시 편집 진입점은 제공하지 않습니다. 이전에 저장한 도시 기록은 기기에 보존됩니다.</p>
+      <p>기존 예정 도시가 Next adventure 위젯에 남을 수 있습니다. 미저장 초안이 없는 상태에서 기존 도시 위젯 링크를 누르면 국가 지도로 이동하며 이전 도시 기록의 보존 안내가 표시됩니다. 도시 편집 화면을 다시 여는 경로는 아닙니다.</p>
+      <h3>앱 언어</h3>
+      <p>설정에서 한국어·English·Français·Español·日本語를 직접 선택할 수 있으며 다시 열어도 선택이 유지됩니다. ‘기기 언어 사용’ 자동 모드는 독일어와 중국어 간체도 지원합니다. 날짜 선택창과 키보드는 기기 설정을 따릅니다.</p>
+      <h3>World explored · Next adventure 위젯</h3>
+      <p>앱을 열고 기록을 저장한 뒤 홈 화면의 위젯 추가에서 세계 방문 진행률 또는 다음 여행 위젯을 선택하세요. World explored는 국가 방문 진행률을, Next adventure는 날짜가 있는 예정 여행을 표시합니다. 위젯 갱신 시점은 iOS가 관리합니다.</p>
+      <h3>오프라인 사용과 저장</h3>
+      <p>로그인이나 회원가입은 필요하지 않습니다. 지도·국가 검색·기록 저장은 오프라인으로 사용할 수 있습니다. 앱에서 외부 링크를 열 때는 인터넷 연결이 필요합니다.</p>
+      <p>기록은 기기에 저장되며 기기 설정에 따라 운영체제 백업에 포함될 수 있습니다. 앱을 삭제하기 전에 OS 백업 설정을 확인하세요. 백업과 복원은 운영체제가 관리합니다.</p>
+    </div>
+    <h3>도움이 필요할 때</h3>
+    <p><a href="https://github.com/DongchanSeo/DongchanSeo.github.io/issues">GitHub 지원 게시판</a>에 앱 버전, 기기·iOS 버전과 재현 순서를 적어 주세요. 공개 게시판이므로 개인정보나 여행 메모는 적지 마세요. 데이터 처리 안내는 기존 <a href="privacy.html">개인정보처리방침</a>에서 확인할 수 있습니다.</p>
+  </section>
+
+  <section id="english" lang="en" aria-labelledby="english-title">
+    <h2 id="english-title">English support</h2>
+    <span class="release">Published 1.9.6 (28)</span>
+    <p>The published version uses a country-focused map and search to record visited, planned and wish-list destinations. Save dates, ratings and notes, and view progress based on 195 countries. City-view entry points are not offered; previously saved records are retained.</p>
+    <p>Settings offers a direct choice of Korean, English, French or Spanish. The previous support page remains available as an <a href="support-before-build29.html">unchanged archive</a>. It preserves earlier wording and should be distinguished from the current feature guide.</p>
+
+    <div class="guide" id="build29-en">
+      <span class="release submission">Submission 1.9.7 (29) · not publicly released</span>
+      <h2>Version-specific guide for 1.9.7 (29)</h2>
+      <h3>Country map, search and travel records</h3>
+      <p>Choose a destination on the world map or through country search. Search includes 208 countries and territories; visited-country progress is based on 195 countries. Choose visited, planned or wish list, then optionally save a date, rating and note. Travel journal shows your saved country records.</p>
+      <h3>Previous city records and widget links</h3>
+      <p>The interface is country focused. City-view, city-search and city-editor entry points are not offered. Previously saved city records remain on the device.</p>
+      <p>An existing planned-city record may still appear in the Next adventure widget. When there is no unsaved draft, tapping its legacy city link opens the country map and shows a notice that the previous city records are preserved. It does not reopen the city editor.</p>
+      <h3>App language</h3>
+      <p>Settings offers Korean, English, French, Spanish or Japanese directly, and the choice persists when the app reopens. The automatic Use device language mode also supports German and Simplified Chinese. Native date pickers and the keyboard follow device settings.</p>
+      <h3>World explored and Next adventure widgets</h3>
+      <p>Open the app and save your records, then use the Home Screen widget gallery to add country progress or your next trip. World explored displays visited-country progress; Next adventure displays a dated planned trip. iOS controls widget refresh timing.</p>
+      <h3>Offline use and storage</h3>
+      <p>No account or sign-in is required. The map, country search and record saving work offline. Opening external links requires an internet connection.</p>
+      <p>Records are stored on the device and may be included in operating-system backups, depending on device settings. Check your OS backup settings before deleting the app. The operating system manages backup and restoration.</p>
+    </div>
+    <h3>Get help</h3>
+    <p>Use the <a href="https://github.com/DongchanSeo/DongchanSeo.github.io/issues">GitHub support board</a> and include the app version, device/iOS version and steps to reproduce the issue. Issues are public: do not include personal contact details or private travel notes. See the existing <a href="privacy.html">privacy policy</a> for data-handling information.</p>
+  </section>
+
+  <section id="history" aria-labelledby="history-title">
+    <h2 id="history-title">이전 지원 안내 원문 / Previous support-page wording</h2>
+    <p lang="ko">1.9.6(28)이 공개되어 있던 시점의 기존 지원 페이지를 바이트 그대로 보존했습니다. 원문은 버전을 표기하지 않았고 이전 도시 기능·언어 설명을 포함하므로 현재 기능 안내로 사용하지 마세요.</p>
+    <p lang="en">The support page that was live while 1.9.6 (28) was published is preserved byte for byte. It did not specify a version and contains older city and language wording; it is a historical record rather than the current feature guide.</p>
+    <p><a href="support-before-build29.html">보존한 원문 열기 / Open the preserved original</a></p>
+  </section>
+  <footer><span lang="ko">지원 안내 확인: 2026-10-09</span> · <span lang="en">Support information checked: 9 October 2026</span></footer>
+</main>
+</body>
+</html>
