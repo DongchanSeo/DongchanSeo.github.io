@@ -1,41 +1,37 @@
 <!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Haru 우리동네 길냥이 앱 지원과 문의 안내입니다.">
-  <title>앱 지원 · Haru 우리동네 길냥이</title>
-  <style>
-    :root{color-scheme:light;--ink:#30483d;--muted:#65756a;--paper:#f6f4ed;--card:#fff;--line:#dfe5d7}
-    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}
-    main{width:min(100% - 32px,760px);margin:0 auto;padding:28px 0 56px}header{padding:18px 0 24px}h1{font-size:clamp(1.7rem,5vw,2.3rem);line-height:1.25;margin:0 0 12px}h2{font-size:1.2rem;line-height:1.4;margin:0 0 8px}p,li{margin:8px 0}section{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin:12px 0}a{color:#245b42;text-underline-offset:3px}nav{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}footer{color:var(--muted);font-size:.92rem;margin-top:24px}
-  </style>
-</head>
-<body>
-  <main>
-    <header>
-      <p>Haru Apps · 대한민국</p>
-      <h1>Haru 우리동네 길냥이 앱 지원</h1>
-      <p>앱은 고양이의 이름·사진·만남·돌봄 기록을 이 기기에 보관합니다. 계정이나 서버 동기화는 사용하지 않습니다.</p>
-      <nav aria-label="Haru Cats 도움말"><a href="privacy.html">개인정보 처리방침</a><a href="mailto:eternalamour@naver.com">이메일로 문의</a></nav>
-    </header>
-    <section><h2>자주 묻는 내용</h2>
-      <ul>
-        <li><strong>위치 권한을 허용하지 않아도 되나요?</strong> 네. 위치 없이 장소 메모로 기록하거나 좌표를 직접 선택할 수 있습니다. 친구 등록과 현재 시각의 새 돌봄 기록은 선택한 위치가 없을 때 화면 사용 중 현재 위치를 한 번 찾습니다. 권한을 아직 정하지 않았다면 운영체제에서 사용 중 권한을 물을 수 있지만, 거부한 권한을 자동으로 다시 묻지 않습니다. 최근·정확한 결과는 작은 지도에서 바로 쓰고, 잘못 잡혔으면 위치 수정으로 고칩니다. 대략적·정확도 부족 결과는 확인하거나 직접 수정하며 오래된 위치는 현재로 확정하지 않습니다. 과거 기록·기존 편집·선택한 초안 위치는 자동 덮어쓰지 않습니다. 실패하면 다시 찾기·수동 선택·위치 없는 기록을 사용할 수 있고 백그라운드 추적은 하지 않습니다.</li>
-        <li><strong>사진 접근을 허용해야 하나요?</strong> 친구 등록·편집과 기록 작성에서 사용자가 운영체제 사진 선택 화면으로 직접 고른 사진만 앱에 보관합니다. 친구 등록·편집에서는 카메라 촬영을 선택할 수 있고 촬영 선택 시 카메라 권한을 요청합니다. 원본 사본과 얼굴 크롭·표시용 사본을 별도로 보존하며 기기 사진 보관함의 원본을 수정하거나 삭제하지 않습니다. 마이크 녹음 기능은 없습니다.</li>
-        <li><strong>백업 파일을 공유해도 안전한가요?</strong> 백업은 암호화되지 않은 JSON 파일이며 사진, 돌봄 기록, 위치 좌표가 포함될 수 있습니다. 선택한 저장 위치나 공유 앱을 확인하고, 다른 사람에게 보내기 전에 내용을 살펴 주세요.</li>
-        <li><strong>포스터에 위치나 건강 기록이 들어가나요?</strong> 포스터에는 직접 정한 동네 제목, 선택한 친구의 얼굴 사진과 이름만 담깁니다. 정확한 위치 좌표와 돌봄·건강 메모는 포함되지 않습니다.</li>
-        <li><strong>지도에서 실제 도로나 영역을 볼 수 있나요?</strong> iOS는 Apple 지도에 저장된 만남과 직접 관찰한 돌봄 위치를 표시합니다. 한 곳은 점, 두 곳은 참고선, 세 곳 이상은 지점을 이은 참고 범위이며 실제 이동 경로나 확정 서식지가 아닙니다. 얼굴·이름을 선택해 아이별 범위를 구분할 수 있습니다. 지도 영역은 Apple 서비스 요청에 반영될 수 있고 주소 검색 버튼을 누르면 입력한 검색어가 iOS 지도 서비스로 전달됩니다. Android는 이 버전에 실제 도로 지도 대신 기기 안의 관찰 지점 도식을 표시합니다. 길찾기나 외부 지도 앱 열기는 제공하지 않습니다. 자세한 처리는 개인정보 처리방침을 확인해 주세요.</li>
-        <li><strong>기록을 완전히 삭제하려면 어떻게 하나요?</strong> 현재 앱은 고양이 프로필·사진·건강 기록을 영구 삭제하는 기능을 제공하지 않습니다. 기기 안의 모든 앱 데이터를 없애려면 앱을 제거해 주세요. 내보낸 백업 파일은 선택한 저장 위치에서 별도로 삭제해야 합니다.</li>
-        <li><strong>돌봄 이력은 어떻게 남기나요?</strong> 돌봄 탭에서 행동을 먼저 고른 뒤 사진과 이름을 보며 여러 친구를 선택하고, 공통 시간·위치·내용을 확인해 한 번 저장할 수 있습니다. 선택한 친구에게만 기록하며 밥주기를 만남으로 자동 추정하지 않습니다. 먹거나 마시는 모습을 봤는지는 아이마다 따로 확인합니다. 약·병원·중성화·예방접종은 아이별 실제 내용·근거·모름 상태를 따로 확인해야 하며 공통 값을 자동 전파하지 않습니다. 아이 상세의 기록 추가와 행동 하나 편집도 유지합니다. 같이 한 행동은 카드 하나에서 확인하되 각 아이의 기록·근거·사진을 보존합니다. 취소하면 초안을 보관하고 이어 쓸 수 있습니다.</li>
-      </ul>
-    </section>
-    <section><h2>개인정보 보호</h2>
-      <p>지원팀은 앱 안의 로컬 기록을 볼 수 없습니다. 문의 시 앱 버전, 기기 모델, 운영체제 버전, 재현 순서를 알려 주시면 도움이 됩니다. 고양이 사진, 정확한 위치, 건강 메모, 전체 백업 파일은 이메일에 첨부하지 마세요.</p>
-      <p>개인정보 처리 방식은 <a href="privacy.html">개인정보 처리방침</a>에서 확인할 수 있습니다.</p>
-    </section>
-    <section><h2>문의</h2><p>Haru 우리동네 길냥이 지원 및 개인정보 문의</p><p><a href="mailto:eternalamour@naver.com">eternalamour@naver.com</a></p></section>
-    <footer><p>Haru Apps · 대한민국</p></footer>
-  </main>
-</body>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Haru 우리동네 길냥이 앱 지원</title><style>body{margin:0;background:#faf7ef;color:#30483d;font-family:system-ui,-apple-system,sans-serif;line-height:1.7}main{max-width:780px;margin:0 auto;padding:36px 22px 64px}h1{font-size:29px;line-height:1.35}h2{font-size:19px;margin:0 0 8px}section{background:#fff;border:1px solid #dfe5d7;border-radius:16px;padding:20px;margin:18px 0}p{margin:10px 0;overflow-wrap:anywhere}a{color:#30483d;display:inline-block;padding:10px 4px;text-underline-offset:4px}nav{display:flex;gap:14px;flex-wrap:wrap}footer{margin-top:24px;font-size:14px}</style></head>
+<body><main><h1>Haru 우리동네 길냥이 앱 지원</h1><p>앱은 고양이의 이름·사진·만남·돌봄 기록을 이 기기에 보관합니다. 계정이나 서버 동기화는 사용하지 않습니다.</p>
+<section><h2>위치 권한을 허용하지 않아도 되나요?</h2>
+<p>네. 위치 권한 없이 만남을 저장할 수 있습니다. iOS에서는 지도에서 선택한 점을 저장하고, 아무 점도 선택하지 않으면 위치를 기록하지 않습니다. 밥·약·관찰·병원·접종·중성화 입력에는 위치가 없으며 과거 기록의 위치는 보존합니다.</p>
+</section>
+<section><h2>사진 접근을 허용해야 하나요?</h2>
+<p>친구 등록·편집과 기록 작성에서 사용자가 운영체제 사진 선택 화면으로 직접 고른 사진만 앱에 보관합니다. 친구 등록·편집에서는 카메라 촬영을 선택할 수 있고 촬영 선택 시 카메라 권한을 요청합니다. 원본 사본과 얼굴 크롭·표시용 사본을 별도로 보존하며 기기 사진 보관함의 원본을 수정하거나 삭제하지 않습니다. 마이크 녹음 기능은 없습니다.</p>
+</section>
+<section><h2>백업 파일을 공유해도 안전한가요?</h2>
+<p>백업은 암호화되지 않은 JSON 파일이며 사진, 돌봄 기록, 위치 좌표가 포함될 수 있습니다. 선택한 저장 위치나 공유 앱을 확인하고, 다른 사람에게 보내기 전에 내용을 살펴 주세요.</p>
+</section>
+<section><h2>포스터에 위치나 건강 기록이 들어가나요?</h2>
+<p>포스터에는 직접 정한 동네 제목, 선택한 친구의 얼굴 사진과 이름만 담깁니다. 정확한 위치 좌표와 돌봄·건강 메모는 포함되지 않습니다.</p>
+</section>
+<section><h2>지도에서 실제 도로나 영역을 볼 수 있나요?</h2>
+<p>iOS는 저장된 만남과 과거 관찰 위치를 Apple 지도에 표시합니다. 한 곳은 점, 두 곳은 참고선, 세 곳 이상은 참고 범위이며 실제 이동 경로나 확정 서식지가 아닙니다. 아이별 얼굴·이름·색으로 선택할 수 있습니다. Android는 실제 지도 설정 전 관찰 지점 도식을 표시합니다.</p>
+</section>
+<section><h2>기록을 완전히 삭제하려면 어떻게 하나요?</h2>
+<p>현재 앱은 고양이 프로필·사진·건강 기록을 영구 삭제하는 기능을 제공하지 않습니다. 기기 안의 모든 앱 데이터를 없애려면 앱을 제거해 주세요. 내보낸 백업 파일은 선택한 저장 위치에서 별도로 삭제해야 합니다.</p>
+</section>
+<section><h2>돌봄 이력은 어떻게 남기나요?</h2>
+<p>행동과 친구를 고르면 추가 입력 없이 저장할 수 있습니다. 시간·위치·지도·사진은 만남에서만 선택합니다. 다른 행동에는 해당 내용·메모만 선택적으로 적고, 의료 상태를 고르지 않으면 모름으로 남깁니다. 여러 친구의 의료 상태와 내용은 서로 전파하지 않습니다. 근거 입력과 확인 단계는 없으며 과거 기록의 근거·날짜·위치·사진은 유지됩니다.</p>
+</section>
+<section><h2>개인정보 보호</h2>
+<p>지원팀은 앱 안의 로컬 기록을 볼 수 없습니다. 문의 시 앱 버전, 기기 모델, 운영체제 버전, 재현 순서를 알려 주시면 도움이 됩니다. 고양이 사진, 정확한 위치, 건강 메모, 전체 백업 파일은 이메일에 첨부하지 마세요.</p>
+<p>개인정보 처리 방식은 개인정보 처리방침에서 확인할 수 있습니다.</p>
+</section>
+<section><h2>문의</h2>
+<p>Haru 우리동네 길냥이 지원 및 개인정보 문의</p>
+<p>eternalamour@naver.com</p>
+</section>
+<nav aria-label="관련 문서"><a href="https://dongchanseo.github.io/haru-cats/privacy.html">개인정보 처리방침</a>
+<a href="mailto:eternalamour@naver.com">이메일로 문의</a></nav>
+<footer>Haru 우리동네 길냥이 · 2026-10-09</footer></main></body>
 </html>
